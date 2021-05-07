@@ -6,6 +6,7 @@ int main(int argc, char** argv){
 	int exponent;
 	int solution;
 	int solution2;
+	int solution3;
 	
 	std::cout << "Gebe die Basis ein: " << std::endl;
 	std::cin >> basis;
@@ -14,5 +15,6 @@ int main(int argc, char** argv){
 	
 	solution = power::iterative(basis,exponent);
 	solution2 = power::recursive(basis,exponent);
-	std::cout << "Ergebnis iterativ: " << solution << " Ergebnis rekursiv: " << solution2 << std::endl;
+	solution3 = power::fastexpo(basis,exponent);
+	std::cout << "Ergebnis iterativ: " << solution << " Ergebnis rekursiv: " << solution2 << " Ergebnis fastexpo: " << solution3 << std::endl;
 }

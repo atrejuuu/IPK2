@@ -1,5 +1,30 @@
 #include <iostream>
 namespace power {
+int fastexpo(int basis, int exponent)
+{
+	int y;
+	int x = basis;
+	int i = 1;
+	
+if(exponent %2 == 0)
+{
+	exponent = exponent/2;
+	
+	while(i < exponent)
+	{
+		x = x*basis;
+		i = i+1;
+	}
+	x = x*x;
+return x;
+}
+if(exponent %2 == 1)
+{
+	y = basis*fastexpo(basis, exponent-1);
+	return y;
+}
+return 0;
+}
 
 int recursive(int basis, int exponent)
 {
