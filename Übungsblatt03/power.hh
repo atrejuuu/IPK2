@@ -1,5 +1,20 @@
 #include <iostream>
 namespace power {
+
+int recursive(int basis, int exponent)
+{
+int solution;
+
+	if(exponent == 0)
+	{
+	return 1;
+	}
+solution = basis*recursive(basis, exponent-1);
+
+return solution;
+	
+}
+
 int iterative(int basis, int exponent) 
 {
 	int i = 1;
