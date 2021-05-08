@@ -40,10 +40,10 @@ return solution;
 	
 }
 
-int iterative(int basis, int exponent) 
+double iterative(double basis, int exponent) 
 {
 	int i = 1;
-	int x = basis;
+	double x = basis;
 	
 	if( exponent <= 0 ) 
 	{

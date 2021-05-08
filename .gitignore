@@ -2,6 +2,7 @@
 *.o
 #eine bestimmte Datei, z.B ein Executable:
 potenzen
+root
 #Sicherungskopien, die auf ~ enden
 *~
 #das Unterverzeichnis build/ (von Cmake)
