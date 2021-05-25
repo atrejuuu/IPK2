@@ -3,6 +3,7 @@
 #eine bestimmte Datei, z.B ein Executable:
 potenzen
 root
+desktop.ini
 #Sicherungskopien, die auf ~ enden
 *~
 #das Unterverzeichnis build/ (von Cmake)

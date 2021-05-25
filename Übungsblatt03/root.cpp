@@ -32,7 +32,7 @@ void test_root(double q, int n, int steps)
 	while(i <= steps)
 	{
 		a_k = (q/power::iterative(a_k,n-1) - a_k) * 1/n + a_k;
-		differenz = q - power::iterative(a_k,2);
+		differenz = q - power::iterative(a_k,n);
 		std::cout << "Ergebnis: " << a_k << " Für Basis: " << q << " Für n'te Wurzel: " << n << " Für Step:" << i << " ist die Genauigkeit: " << differenz << std::endl;
 		i = i+1;
 	}
