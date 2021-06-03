@@ -4,6 +4,7 @@
 potenzen
 root
 desktop.ini
+vector
 #Sicherungskopien, die auf ~ enden
 *~
 #das Unterverzeichnis build/ (von Cmake)
