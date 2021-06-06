@@ -79,19 +79,19 @@ std::pair<double,double> minmax_loesung = minmax_func(v3); // Aufgabe 1 b)
 std::cout << "Min: " << minmax_loesung.first << std::endl;
 std::cout << "Max: " << minmax_loesung.second << std::endl;
 
-std::cout << "Ausgabe von reversed vector: " << std::endl;
+std::cout << "Ausgabe von reversed vector: " << std::endl; // Aufgabe 1 c)
 ausgabe(reversed(v3));
 ausgabe(reversed(v1));
 ausgabe(reversed(v2));
 ausgabe(reversed(v4));
 
-std::cout << "Ausgabe von rounded vector: " << std::endl;
+std::cout << "Ausgabe von rounded vector: " << std::endl; // Aufgabe 1 d)
 rounded(v3);
 ausgabe(v3);
 rounded(v4);
 ausgabe(v4);
 
-std::cout << "Ausgabe von reversed_swap vector: " << std::endl;
+std::cout << "Ausgabe von reversed_swap vector: " << std::endl; // Aufgabe 1 e)
 reversed_swap(v3);
 ausgabe(v3);
 reversed_swap(v4);
