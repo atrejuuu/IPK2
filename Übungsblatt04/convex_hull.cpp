@@ -3,6 +3,24 @@
 #include <fstream>
 #include <array>
 #include <string>
+#include <algorithm>
+
+bool sort_by_y(std::array<double, 2> a, std::array<double, 2> b)
+{
+		if( a[1] < b[1] || a[1]==b[1] && a[0] < b[0])
+		{
+			return true;
+		}
+			else
+			{
+				return false;
+			}
+}
+
+void convex_hull(std::vector<std::array<double, 2>>& points)
+{
+	std::sort(points.begin(), points.end(), sort_by_y);
+}
 
 std::vector<std::array<double, 2>> read_points_from_file(std::string filename)
 {
