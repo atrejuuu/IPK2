@@ -2,6 +2,7 @@
 #include <iostream>
 #include <utility>
 #include <cmath>
+
 void reversed_swap(std::vector<double>& v)
 {
 	for(int i = 0; i < v.size()/2; i++)
@@ -9,6 +10,7 @@ void reversed_swap(std::vector<double>& v)
 	std::swap(v[i],v[(v.size()-1)-i]);
 	}
 }
+
 void rounded(std::vector<double>& v)
 {
 	for(int i = 0; i < v.size(); i++)
@@ -16,6 +18,7 @@ void rounded(std::vector<double>& v)
 		v[i] = std::round(v[i]);
 	}
 }
+
 std::vector<double> reversed(const std::vector<double>& v)
 {
 	std::vector<double> reversedvector = v;
@@ -26,20 +29,21 @@ std::vector<double> reversed(const std::vector<double>& v)
 		}
 return reversedvector;
 }
+
 std::pair<double,double> minmax_func(std::vector<double> n)
 {
 	double min = n[0];
 	double max = n[0];
 	std::pair<double,double> minmax;
 	int i;
-	
+
 	for(i=1; i < n.size(); i++)
 	{
 		if(n[i] < min)
 		{
 			min = n[i];
 		}
-	
+
 		if(n[i] > max)
 		{
 			max =n[i];
@@ -57,7 +61,6 @@ void ausgabe(std::vector<double> n)
 	}
 std::cout << "\n";
 }
-
 
 int main(int argc, char** argv)
 {
@@ -78,6 +81,10 @@ ausgabe(v4);
 std::pair<double,double> minmax_loesung = minmax_func(v3); // Aufgabe 1 b)
 std::cout << "Min: " << minmax_loesung.first << std::endl;
 std::cout << "Max: " << minmax_loesung.second << std::endl;
+
+std::pair<double,double> minmax_loesung2 = minmax_func(v4); // Aufgabe 1 b)
+std::cout << "Min: " << minmax_loesung2.first << std::endl;
+std::cout << "Max: " << minmax_loesung2.second << std::endl;
 
 std::cout << "Ausgabe von reversed vector: " << std::endl; // Aufgabe 1 c)
 ausgabe(reversed(v3));
